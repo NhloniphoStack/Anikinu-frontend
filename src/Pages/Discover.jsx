@@ -134,9 +134,7 @@ export default function Discover(){
          let value = option?.value
         
         setSelectedYear(option)
-        if(!value){
-            console.log('done')
-        }
+        
         setSearchParams(() => ({year: value}))
         const params = new URLSearchParams(location.search)
 
@@ -177,10 +175,10 @@ export default function Discover(){
     function handleSeason(option){
 
           let value = option?.value
-          console.log(value)
+         
         setSelectedSeason(option)
         if(!value){
-             console.log("notginh")
+             
              setSearchParams((param) => {
                 const newParam = new URLSearchParams(param)
                 newParam.delete("season")
@@ -189,7 +187,7 @@ export default function Discover(){
         }else{
             setSearchParams(() => ({season: value}))
            const params = new URLSearchParams(location.search)
-           console.log("it ran")
+           
            params.set("season", value)
            navigate(`/discover?${params.toString()}`)
 
@@ -241,7 +239,7 @@ export default function Discover(){
         if(!value){
              value =  'JP'
         }
-        console.log(value)
+    
         setSearchParams(() => ({country: value}))
         const params = new URLSearchParams(location.search)
 

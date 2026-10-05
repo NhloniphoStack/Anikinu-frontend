@@ -10,7 +10,7 @@ export async function getUpcoming(){
 
     if(!res.ok){
         const error = await res.json()
-        console.log(error)
+      
         return error
     }
 

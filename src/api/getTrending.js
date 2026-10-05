@@ -11,7 +11,7 @@ export async function getTrending(){
 
     if(!res.ok){
         const error = await res.json()
-        console.log(error)
+        
         return error
     }
 

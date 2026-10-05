@@ -14,7 +14,7 @@ export default function ChangeLog(){
     const [currenTitle, setCurrenTitle] = useState("")
     const [prevLogs, setPrevLogs] = useState(null)
    const [currentUpdate, setCurrentUpdate] = useState(null)
-   console.log(currentUpdate)
+   
    
     
     function changeColor(chip){

@@ -15,12 +15,12 @@ export async function entriesAction({request}){
             content: content
         })
 
-        console.log(attempt)
+       
 
         return redirect(`/admin/entries?edited=true`)
 
      }catch(error){
-        console.log(error)
+        
         return error
      }
     

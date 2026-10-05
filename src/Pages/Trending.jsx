@@ -16,7 +16,7 @@ export default function Trending(){
            <Suspense fallback={<DiscoverFallback />}>
             <Await resolve={animePromise}>
                 {(anime) => {
-                    console.log(anime)
+                   
 
                     return (
                          <>

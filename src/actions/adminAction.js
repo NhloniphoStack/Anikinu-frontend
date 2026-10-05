@@ -10,11 +10,11 @@ export async function adminAction({request}){
             version: formData.get("version"),
             content: formData.get("content")
         })
-       console.log(attempt)
+      
        return redirect('/changelog')
 
     }catch(error){
-        console.log(error)
+        
         return error
     }
 }

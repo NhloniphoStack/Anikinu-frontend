@@ -5,7 +5,7 @@ import LoadingBox from "./LoadingBox.jsx"
 import { useRevalidator, useSearchParams, Link } from "react-router"
 import { removeListItem } from "../api/auth/removeListItem.js"
 export default function MyListCard({anime, color}){
-    console.log(anime)
+    
    const [edit, setEdit] = useState(false)
    const [deleted, setDeleted] = useState(false)
   const [selected, setSelected] = useState("")
@@ -14,7 +14,7 @@ export default function MyListCard({anime, color}){
   const [searchParams, setSearchParams] = useSearchParams()
 async function handleStatus(){
     
-    console.log(selected)
+    
       try{
         setEdit(false)
         setLoading(true)

@@ -2,7 +2,7 @@
 
 
 export async function addLog(details){
-    console.log(details)
+    
     const res = await fetch(`/api/changelogs`, {
         method: 'POST',
         credentials: 'include',
@@ -14,11 +14,11 @@ export async function addLog(details){
 
     if(!res.ok){
         const error = await res.json()
-        console.log(error)
+        
         return error
     }
 
     const success = await res.json()
-    console.log(success)
+    
     return success
 }

@@ -7,7 +7,7 @@ export default function MyChart({data}){
     const completed = () => data?.filter(a => a.status === 'COMPLETED')
     const dropped = () => data?.filter(a => a.status === 'DROPPED')
     const watching = () => data?.filter(a => a.status === 'WATCHING')
-    console.log(planned().length)
+    
     const dataValue = [
         {name: "Plan to watch", value: planned()?.length},
          {name: "Completed", value: completed()?.length},

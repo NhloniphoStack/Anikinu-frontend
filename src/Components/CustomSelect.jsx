@@ -11,7 +11,7 @@ export default function CustomSelect({onSelect}){
     const [selected, setSelected] = useState(null)
     const [showSelect, setShowSelect] = useState(false)
     const [flipped, setFlipped] = useState(false)
-    console.log(flipped)
+    
     const [options, setOptions] = useState([{
             value: 'WATCHING',
             label: 'Watching',
@@ -41,7 +41,7 @@ export default function CustomSelect({onSelect}){
     function handleSelect(option){
         
         setSelected(option)
-      console.log(option)
+      
     }
 
     const active = {
@@ -61,7 +61,7 @@ export default function CustomSelect({onSelect}){
         
         return opt.id === id ? {...opt, active: !opt.active} : {...opt, active: false}
      }))
-     console.log(options)
+    
      setShowSelect(false)
      setFlipped(false)
      

@@ -35,13 +35,13 @@ export default function Entries(){
     }
 
     function toggleConfirm(id){
-        console.log(id)
+        
         setId(id)
         setConfirmModal(prev => !prev)
     }
 
    async function handleDeleteLog(){
-    console.log(id)
+    
        try{
 
         const attempt = await deleteLog(id)

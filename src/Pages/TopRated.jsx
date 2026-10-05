@@ -4,7 +4,7 @@ import { Suspense,useEffect } from "react"
 import DiscoverFallback from "../Components/DiscoverFallback.jsx"
 export default function TopRated(){
     const animePromise = useLoaderData()?.promise
-    console.log(animePromise)
+   
     useEffect(() => {
             window.scrollTo({top:0, behavior: "smooth"})
          })
@@ -16,7 +16,7 @@ export default function TopRated(){
            <Suspense fallback={<DiscoverFallback />}>
             <Await resolve={animePromise}>
                 {(anime) => {
-                    console.log(anime)
+                    
 
                     return (
                          <>

@@ -1,7 +1,7 @@
 
 
 export async function addListItem(item){
-    console.log(item)
+   
     const res = await fetch(`/api/me/list`, {
         method: 'POST',
         headers: {
@@ -12,7 +12,7 @@ export async function addListItem(item){
 
     if(!res.ok){
         const error = await res.json()
-        console.log(error)
+       
         return error
     }
 

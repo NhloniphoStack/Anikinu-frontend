@@ -2,7 +2,7 @@ import ChangeLog from "../Pages/ChangeLog";
 import Skeleton from "react-loading-skeleton";
 
 export default function ChangeLogHeroCard({currentVersion}){
-    console.log(currentVersion)
+    
 
      function cleanDate(date){
         if(!date){

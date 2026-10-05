@@ -9,9 +9,9 @@ export default function ReportBox(){
 
     function handleSubmit(formData){
        const issue = formData.get("report")
-       console.log(issue)
+      
        if(!issue){
-        console.log("didnt submit")
+        
         return;
        }
        setShowForm(false)

@@ -7,7 +7,7 @@ export async function signupAction({request}){
     const username = formData.get("username")
     const email = formData.get("email")
     const password = formData.get("password")
-   console.log(username, password, email)
+  
     try{
       const attempt =  await signup({
             username: username,
@@ -22,7 +22,7 @@ export async function signupAction({request}){
       return redirect('/mylist')
 
     }catch(error){
-        console.log(error)
+       
         return error
     }
 

@@ -8,7 +8,7 @@ export default function AnimeDetails(){
     const anime = useLoaderData()?.animePromise
     const recommendations = useLoaderData()?.recommendations
     const myListEntries = useLoaderData()?.listEntries
-    console.log(myListEntries)
+    
     function convertScore(score){
           return (score / 100 * 10).toFixed(1)
     }
@@ -46,13 +46,13 @@ export default function AnimeDetails(){
     ]
 
      async function handleAdd(status){
-     console.log(status)
+    
      const attempt = await addListItem({
         animeID: anime?.id,
         status: status?.value
      })
 
-     console.log(attempt)
+     
     }
 
     
@@ -98,7 +98,7 @@ export default function AnimeDetails(){
                             </p>
                            <Await resolve={myListEntries}>
                             {item => {
-                                console.log(item)
+                                
                                 return (
                                      <ListButton mylist={item} listEntries={listEntries} anime={anime}/>
                                 )

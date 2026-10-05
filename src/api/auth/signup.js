@@ -18,6 +18,6 @@ export async function signup(details){
     }
 
     const success = await res.json()
-    console.log(success)
+   
     return success
 }

@@ -5,7 +5,7 @@ export async function loginAction({request}){
     const formData = await request.formData()
     const username = formData.get("username")
     const password = formData.get("password")
-    console.log(username)
+    
     try{
         const attempt = await login({
             username: username,
@@ -13,7 +13,7 @@ export async function loginAction({request}){
         })
 
         if(attempt?.error){
-            console.log(attempt)
+           
             return attempt
         }
 
@@ -28,7 +28,7 @@ export async function loginAction({request}){
         
 
     }catch(error){
-        console.log(error)
+        
         return error
     }
 }

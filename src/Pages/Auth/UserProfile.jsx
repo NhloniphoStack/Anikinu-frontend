@@ -2,7 +2,7 @@ import { Await, useLoaderData, useOutletContext } from "react-router"
 
 export default function UserProfile(){
     const data = useLoaderData()?.data
-    console.log(data)
+    
      function cleanDate(date){
         if(!date){
             return null
@@ -16,7 +16,7 @@ export default function UserProfile(){
       
         <Await resolve={data}>
             {(user) => {
-                console.log(user)
+               
 
                 return(
                     <div className="profile">

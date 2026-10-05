@@ -31,7 +31,7 @@ export default function Header({user}){
         const { value } = e.target;
 
        
-        console.log(value)
+        
 
     }
 
@@ -71,7 +71,7 @@ export default function Header({user}){
     })
 
     function convertScore(score){
-        console.log(score)
+        
           const calc = (score / 100 * 10).toFixed(1)
           if(score === null){
             
@@ -98,7 +98,7 @@ export default function Header({user}){
           
 
         }catch(error){
-            console.log(error)
+           
             return error
         }
      

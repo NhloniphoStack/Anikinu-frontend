@@ -11,7 +11,7 @@ export default function ListButton({anime, listEntries, mylist}){
     const [success, setSuccess] = useState(null)
     const [loading, setLoading] = useState(false)
     const [remove, setRemove] = useState(false)
-    console.log(remove)
+    
     const [myList, setMyList] = useState(mylist || [])
      const user = useOutletContext()
    
@@ -21,9 +21,9 @@ export default function ListButton({anime, listEntries, mylist}){
     }
 
     async function handleAdd(status){
-     console.log(status)
+    
     if(!user.user?.username){
-        console.log('not authorized')
+        
         setSuccess(false)
         return;
     }
@@ -44,7 +44,7 @@ export default function ListButton({anime, listEntries, mylist}){
 
      }catch(error){
         setSuccess(null)
-        console.log(error)
+        
      }
     
      

@@ -3,11 +3,11 @@ import { getUser } from "./getUser.js";
 
 
 export async function requireAuth(message){
-    console.log(message)
+   
     const user = await getUser()
     
     if(user?.error){
-        console.log(user)
+        
         return redirect('/login')
     }
    
@@ -18,11 +18,11 @@ export async function requireAuth(message){
 
 
 export async function requireAuthAdmin(message){
-    console.log(message)
+   
     const user = await getUser()
     
     if(user?.error){
-        console.log(user)
+        
         return redirect('/login')
     }
 
