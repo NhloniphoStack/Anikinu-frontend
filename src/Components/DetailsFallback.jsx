@@ -1,4 +1,4 @@
-import LoadingSkeleton from "./LoadingSkeletons/recommendations loading skeletons/LoadingSkeleton.jsx";
+import LoadingSkeleton from "./loadingSkeletons/recommendations loading skeletons/LoadingSkeleton.jsx";
 
 export default function DetailsFallback(){
     return (
