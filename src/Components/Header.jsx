@@ -179,7 +179,7 @@ export default function Header({user}){
                     <NavLink to="/mylist"  className={({isActive}) => isActive ? "selected-link" : null}>My list</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/changelog"  className={({isActive}) => isActive ? "selected-link" : null}>{`Changelog(beta)`}</NavLink>
+                    <NavLink to="/changelog"  className={({isActive}) => isActive ? "selected-link" : null}>{`Changelog`}</NavLink>
                 </li>
                
               
@@ -248,7 +248,7 @@ export default function Header({user}){
             <Link to="/mylist">My List</Link>
             {!user?.user &&  <Link to="/signup">Signup</Link>}
             {!user?.user &&  <Link to="/login">Login</Link>}
-            <Link to="/changelog">{`Changelog(beta)`}</Link>
+            <Link to="/changelog">{`Changelog`}</Link>
             <Link to="/about">About</Link>
 
          </div>}
