@@ -1,4 +1,4 @@
-import { Form, useActionData, useNavigation } from 'react-router'
+import { Form, useActionData, useNavigation, Link } from 'react-router'
 import tick from '../../assets/pink-tink.svg'
 
 export default function SignUp(){
@@ -37,21 +37,21 @@ export default function SignUp(){
         
         <label className="username">Username</label>
         <input name="username"
-         placeholder="Choose a username" />
+         placeholder="Choose a username" required/>
 
         <label>Email</label>
         <input type="email"
         name="email"
-         placeholder="your@example.com" />
+         placeholder="your@example.com" required/>
 
           <label>Password</label>
         <input type="password"
         name="password"
-         placeholder="Create a password"/>
+         placeholder="Create a password" required/>
          <div className="terms-accept">
          
          <label >
-            <input type='checkbox' />
+            <input type='checkbox' required/>
             I accept the terms and conditions
          </label>
 
@@ -61,9 +61,16 @@ export default function SignUp(){
             <div className="error-container">
                 <p>{error.error}</p>
             </div>}
+             
         <div className="create-button">
             <button>{state !== 'idle' ? 'Creating...':'Create account'}</button>
         </div>
+
+        <div className="routing-message">
+                <p>
+                   Already have an account?
+                     <Link to="/login">Login</Link></p>
+            </div>
         </div>
         </Form>
         </div>

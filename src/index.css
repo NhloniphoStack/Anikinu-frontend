@@ -3286,6 +3286,17 @@ justify-content: center;
      color: white;
 }
 
+.routing-message a{
+    color: palevioletred;
+    
+}
+
+.routing-message{
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 
 @media (max-width: 600px){

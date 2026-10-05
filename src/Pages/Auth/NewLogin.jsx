@@ -1,4 +1,4 @@
-import { useNavigation, Form, useActionData } from "react-router"
+import { useNavigation, Form, useActionData, Link } from "react-router"
 
 
 export default function NewLogin(){
@@ -30,11 +30,17 @@ export default function NewLogin(){
             <div className="error-container">
                 <p>{error.error}</p>
             </div>}
+
+            
          
          <div className="new-login-button">
             <button disabled={status !== 'idle'}>{status !== 'idle' ? 'Loggin in....' : 'Login'}</button>
         </div>
-
+         <div className="routing-message">
+                <p>
+                   Don't have an account?
+                     <Link to="/signup">Signup</Link></p>
+            </div>
         </div>
         </Form>
        </div>
