@@ -1,4 +1,4 @@
-import AnimeCardSkeleton from "./animeCardSkeleton.jsx";
+import AnimeCardSkeleton from "./AnimeCardSkeleton.jsx";
 
 
 export default function AnimeCardSkeletons({count = 6}){
