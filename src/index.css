@@ -3042,6 +3042,7 @@ min-width: 44px;
 
 .signup-form{
   display: flex;
+  gap: 10px;
   flex-direction: column;
 }
 
